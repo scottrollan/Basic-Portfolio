@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    background-image:url(https://static1.squarespace.com/static/532f579ce4b00147ec52e8fe/5c0d422f1ae6cf6c709167b9/5c3549ff21c67c3150f5c669/1546996234262/greyzz_%402X.png?format=500w);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.mainContent {
+    width: 960px;
+}
+
+.mainPic {
+    height: auto;
+    width: 20%;
+    float: left;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.submitButton {
+    clear: both;
+}
