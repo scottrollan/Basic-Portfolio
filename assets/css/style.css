@@ -75,6 +75,21 @@ p,
     height: 0;
     clear: both;
 }
+.footerBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 4px solid #4aaaa5;
+    background-color: #666666;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    color: #ffffff;
+    padding: 25px 0 0 0;
+}
+.push {
+    height: 100px;
+} 
 /* 
 The following styles affect the About Me page only
 */
@@ -132,3 +147,4 @@ The following styles affect the Contact Me page only
     padding: 10px;
     text-decoration: none;
 }
+
