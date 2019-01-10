@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     /* font-size: 22px; */
     background-image:url("https://static1.squarespace.com/static/532f579ce4b00147ec52e8fe/5c0d422f1ae6cf6c709167b9/5c3549ff21c67c3150f5c669/1546996234262/greyzz_%402X.png?format=500w");
+    color: #777777;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,21 +15,22 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     background-color: #ffffff;
     margin: 0;
-    border-bottom: solid 1px #777;
+    border-bottom: solid 1px #cccccc;
 }
 
 #headerBox {
     width: 960px;
     margin: 0 auto 0;
-    box-sizing: border-box;
-
+   /* box-sizing: border-box;
+    */
 }
 
 #tealBarryRollan {
     background-color: #4aaaa5;
     color: #ffffff;
+    width: auto;
     float: left;
-    padding: 15px;
+    padding: 20px;
 }
 .topBtn {
     float: right;
@@ -37,25 +39,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mainBox {
     clear:both;
-    width: 920px;
+    width: 960px;
     height: auto;
     margin: 40px auto;
     background-color: #ffffff;
-    padding: 20px;
-    box-sizing: border-box;
+    /* padding: 20px; */
+    border: solid 1px #dddddd;
+    /* box-sizing: border-box;
+    */
 }
 h2 {
     color: #4aaaa5;
-}
-
-.mainPic {
-    height: auto;
-    width: 20%;
-    float: left;
-    margin: 0 15px 15px 0;
-}
-p {
-    font-size: 22px;
+    margin-left: 20px;
+    padding: 20px 20px 20px 0;
 }
 .clearfix:after {
     content: ".";
@@ -64,11 +60,34 @@ p {
     height: 0;
     clear: both;
 }
-
-.floatLeft {
+/* 
+The following styles affect the About Me page only
+*/
+.mainPic {
+    height: auto;
+    width: 20%;
     float: left;
+    margin: 0 20px 20px 20px;
+    border-radius: 12px;
 }
-
+p {
+    font-size: 22px;
+    padding: 20px;
+}
+/*
+The folowwing styles affect the Portfolio (gallery) page only
+*/
+.portImage {
+    width: 293.3px;
+    height: auto;
+    float: left;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/*
+The following styles affect the Contact Me page only
+*/
 .submitButton {
     clear: both;
     float: left;
