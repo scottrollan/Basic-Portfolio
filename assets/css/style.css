@@ -17,7 +17,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     border-bottom: solid 1px #cccccc;
 }
-
+.footerBox {
+    width: 100%;
+    clear: both;
+    position: fixed;
+    background-color:#666666;
+   /* margin-bottom: 0; */
+    border-top: solid 3px #4aaaa5;
+}
 #headerBox {
     width: 960px;
     margin: 0 auto 0;
@@ -56,6 +63,11 @@ h2 {
 img {
     border-radius: 12px;
 }
+p,
+:any-link {
+    font-size: 22px;
+    margin: 10px 20px 0px 20px;
+}
 .clearfix:after {
     content: ".";
     visibility: hidden;
@@ -71,10 +83,6 @@ The following styles affect the About Me page only
     width: 20%;
     float: left;
     margin: 0 20px 20px 20px;
-}
-p {
-    font-size: 22px;
-    padding: 10px 20px 0px 20px;
 }
 /*
 The folowwing styles affect the Portfolio (gallery) page only
@@ -94,15 +102,33 @@ The folowwing styles affect the Portfolio (gallery) page only
     height: auto;
     bottom: 10px;
     background-color: #4aaaa5;
-    text-align: center;
     color: #ffffff;
+    text-align: center;
     font-size: 32px;
     padding: 10px 0px;
 }
 /*
 The following styles affect the Contact Me page only
 */
+.inputSmall {
+    width: 920px;
+    height: 22px;
+    margin: 10px 20px 0px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.inputLarge {
+    width: 920px;
+    height: 180px;
+    margin: 10px 20px 0px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;    
+}
 .submitButton {
-    clear: both;
+    margin: 20px;
     float: left;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
 }
