@@ -31,7 +31,6 @@ h1, h2, h3, h4, h5, h6 {
    /* box-sizing: border-box;
     */
 }
-
 #tealBarryRollan {
     background-color: #4aaaa5;
     color: #ffffff;
@@ -39,10 +38,17 @@ h1, h2, h3, h4, h5, h6 {
     float: left;
     padding: 20px;
 }
+#tealBarryRollan:hover {
+    background-color: #ffffff;
+    color: #4aaaa5;
+}
 .topBtn {
     float: right;
     margin-left: 20px;
-    padding-top: 20px;
+    padding-top: 20px;    
+}
+.topBtn:hover {
+    color: #4aaaa5;
 }
 .mainBox {
     clear:both;
@@ -61,7 +67,17 @@ h2 {
     padding: 20px 20px 20px 0;
 }
 img {
-    border-radius: 12px;
+    border-radius: 16px;
+    transition: border-radius 300ms ease-in-out;
+}
+img:hover {
+    border-radius: 0px;
+    -moz-box-shadow:    3px 3px 5px 6px #999;
+    -webkit-box-shadow: 3px 3px 5px 6px #999;
+    box-shadow:         3px 3px 5px 6px #999;
+}
+img ~ div:hover {
+    color: #777777;
 }
 p,
 :any-link {
@@ -90,15 +106,40 @@ p,
 .push {
     height: 100px;
 } 
+
 /* 
 The following styles affect the About Me page only
 */
+/* old pic setup
 .mainPic {
+    width: 180px;
     height: auto;
-    width: 20%;
     float: left;
     margin: 0 20px 20px 20px;
+    position: relative; 
+} */
+#logo-holder {
+    position:relative; 
+    float: left;
+    margin: 0 20px 20px 20px;
+    width:180px; 
+    height:240px; /*dimensions of image*/
 }
+#logo-holder .image,
+#logo-holder .text {
+    transition: opacity 0.5s ease-in-out;
+}
+#logo-holder .text {
+    position:absolute; 
+    top:80px; 
+    left:0; 
+    color: #417213;
+    text-align: justify;
+    opacity:0;
+}
+
+#logo-holder:hover .image {opacity:0;}
+#logo-holder:hover .text {opacity:1;}
 /*
 The folowwing styles affect the Portfolio (gallery) page only
 */
@@ -146,5 +187,9 @@ The following styles affect the Contact Me page only
     color: #ffffff;
     padding: 10px;
     text-decoration: none;
+}
+.submitButton:hover {
+    background-color: #ffffff;
+    color: #4aaaa5;
 }
 
